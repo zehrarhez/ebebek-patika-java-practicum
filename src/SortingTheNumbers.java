@@ -12,7 +12,7 @@ public class SortingTheNumbers {
         c = input.nextInt();
 
         System.out.print("Numbers from small to large : ");
-        if (a < b && b < c) {
+        if (a < b && a < c) {
             if (b < c) {
                 System.out.println("a < b < c");
             } else {
@@ -30,7 +30,32 @@ public class SortingTheNumbers {
             }else {
                 System.out.println("c < b < a");
             }
+        } if (a < b && a < c){
+            if (b == c){
+                System.out.println("a < b = c");
+            }
+        }if (b < a && b < c){
+            if (a == c){
+                System.out.println("b < a = c");
+            }
+        }if (c < a && c < b) {
+            if (a == b) {
+                System.out.println("c < a = b");
+            }
+        }if (b < a && c < a){
+            if (b == c){
+                System.out.println("b = c < a");
+            }
+        }if (a < b && c < b){
+            if (a == c){
+                System.out.println("a = c < b");
+            }
+        }if (b < c && a < c){
+            if (b == a){
+                System.out.println("a = b < c");
+            }
+        } if (a == b && a == c){
+            System.out.println("a = b = c");
         }
-
     }
 }
