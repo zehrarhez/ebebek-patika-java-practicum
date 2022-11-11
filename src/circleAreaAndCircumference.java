@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class circleAreaAndCircumference {
+public class CircleAreaAndCircumference {
     public static void main(String[] args){
         double r, pi = 3.14;
         double angle;
