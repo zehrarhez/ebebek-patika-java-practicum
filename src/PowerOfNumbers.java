@@ -6,11 +6,11 @@ public class PowerOfNumbers {
         int num;
         System.out.println("Enter a number : ");
         num = input.nextInt();
-        for (int i = 0; i <= num; i++) {
-            if ((i % 4 == 0) & (i % 5 == 0)) {
-                System.out.println(i);
-            }
-
+        for (int i = 1; i <= num; i *= 4) {
+            System.out.println("Power of 4 : " +i);
+        }
+        for (int i = 1; i <= num; i *= 5) {
+            System.out.println("Power of 5 : " +i);
         }
     }
 }
